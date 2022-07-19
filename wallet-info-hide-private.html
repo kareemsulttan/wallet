@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Wallet info</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Saas, MD, multi-uses, HTML, Mapp, Modern" />
+  <meta name="author" content="EEC" />
+  <meta name="email" content="" />
+  <meta name="website" content="" />
+  <meta name="Version" content="" />
+  <!--STYLE-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--INTRO PAGE-->
+
+<body>
+
+  <!-- MOBILE STATUS BAR -->
+  <div class="android-status-bar-container">
+    <img src="assets/android-status-bar.svg" alt="android-status-bar">
+  </div>
+
+  <div class="main h-100 p-relative wallet-info has-bottom-nav">
+
+    <!-- STATUS HEADER -->
+    <div class="header mb20">
+      <div class="row justify-content-between status-bar">
+        <div class="col-4">
+          <div class="left-side-bar d-flex justify-content-start">
+            <span class="mr10"><img src="assets/icons/status-checked.svg" alt="status-checked"></span>
+            <span><img src="assets/icons/status-blug.svg" alt="status-blug"></span>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="right-side-bar text-right fs10">
+            <span class="mr14">Peers: 12</span>
+            <span>BTS/USD: $50000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN TITLE -->
+    <div class="main-title pt-0 mb30">
+      <div class="p-relative">
+        <h2>Wallet Info</h2>
+        <a class="back-arrow" href="history.html"><img src="assets/icons/back.svg" alt="back"></a>
+      </div>
+    </div>
+
+    <!-- PASSWORD CONTAINER -->
+    <div class="receive-inputs-container">
+      <div class="input-container">
+        <div class="form-group d-flex align-items-end mb30">
+          <div class="col-7">
+            <input type="password" class="form-control fs-lg-pass" id="wallet-info-pass" aria-describedby="walletInfoPass"
+              placeholder="Password" value="test test">
+          </div>
+          <div class="btn-input col-5">
+            <button class="btn btn-default border-radius-0 btn-secondary w-100">HIDE PRIVATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY CONTAINER -->
+    <div class="hide-show-key-container">
+      <div class="text-left fs14 Public-key d-flex mb20 align-items-end">
+        <div class="key-details col-9">
+          <div class="key-name mb10">Public key: </div>
+          <div class="key-pass text-private text-nowrap">masdkbmnwerfwe[]fwefwejfwe</div>           
+        </div>
+        <div class="copy-btn col-3 text-right">
+          <button class="btn btn-primary border-radius-0">copy</button>
+        </div>
+      </div>
+      <div class="text-left fs14 Public-key d-flex mb20 align-items-end">
+        <div class="key-details col-9">
+          <div class="key-name mb10">Private key: </div>
+          <div class="key-pass text-private text-nowrap">masdkbmnwerfwe[]fwefwejfwe</div>           
+        </div>
+        <div class="copy-btn col-3 text-right">
+          <button class="btn btn-primary border-radius-0">copy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <div class="bottom-nav-container">
+      <div class="row justify-content-between flex-nowrap">
+        <div class="nav-item">
+          <a class="active" href="wallet-explorer.html">
+            <img src="assets/icons/nav-explorer.svg" alt="nav-explorer">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="send-wallet.html">
+            <img src="assets/icons/nav-send.svg" alt="nav-send">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="receive-wallet.html">
+            <img src="assets/icons/nav-receive.svg" alt="nav-recieve">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="coinjoin.html">
+            <img src="assets/icons/nav-coinjoin.svg" alt="nav-coinjoin">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="settings.html">
+            <img src="assets/icons/nav-setting.svg" alt="nav-settings">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CUSTOM JS -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

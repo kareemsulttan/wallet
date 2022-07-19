@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recover Wallet Success</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Saas, MD, multi-uses, HTML, Mapp, Modern" />
+  <meta name="author" content="EEC" />
+  <meta name="email" content="" />
+  <meta name="website" content="" />
+  <meta name="Version" content="" />
+  <!-- STYLE -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- RECOVER WALLET PAGE -->
+
+<body>
+  
+  <!-- MOBILE STATUS BAR -->
+  <div class="android-status-bar-container">
+    <img src="assets/android-status-bar.svg" alt="android-status-bar">
+  </div>
+
+  <div class="main h-100 p-relative recover-wallet">
+
+    <!-- MAIN TITLE -->
+    <div class="main-title">
+      <div class="p-relative">
+        <h2>Recover Wallet</h2>
+        <a class="back-arrow" href="index.html"><img src="assets/icons/back.svg" alt="back"></a>
+      </div>
+      <p class="text-justified">
+        <span class="fs16">Heads up!</span>
+        <br />
+        At recovery, the wallet is unable to check if your password is correct or not. If you provide a wrong password,
+        a wallet will be recovered with the provided Recovery Words and password combination.
+      </p>
+    </div>
+
+    <!-- INPUT CONTAINER -->
+    <div class="input-container">
+      <div class="form-group">
+        <input type="text" class="form-control" id="recovery-name" aria-describedby="recoveryName"
+          placeholder="Wallet name">
+        <div class="input-icon">
+          <img src="assets/icons/account.svg" alt="account">
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control fs-lg-pass" id="recovery-pass" aria-describedby="recoveryPass"
+          placeholder="Password">
+        <div class="input-icon">
+          <img src="assets/icons/lock.svg" alt="lock">
+        </div>
+      </div>
+      <div class="form-group mb20">
+        <input type="password" class="form-control fs-lg-pass" id="recovery-words" aria-describedby="recoveryPass"
+          placeholder="Recovery words">
+        <div class="input-icon">
+          <img src="assets/icons/lock.svg" alt="lock">
+        </div>
+      </div>
+
+      <!-- COLLLAPSED MENUE -->
+      <div class="clps-menu clps-lv-1 text-left">
+        <button class="clps-button d-flex-center-vh btn fs16 py-0 pr-0"><span class="clps-arrow"><img src="assets/icons/polygon.svg" alt="polygon"></span>Advanced options</button>
+        <ul class="m-0 pl-0">
+          <li class="clps-menu clps-lv-2">
+            <div class="form-group mb10">
+              <label class="text-gray" for="key-path">Account Key Path:</label>
+              <input type="text" class="form-control pt5" id="key-path" aria-describedby="key-path" placeholder="m/84’/0’/0’">
+            </div>
+            <div class="form-group mb10">
+              <label class="text-gray" for="gap-limit">Minimum Gap Limit:</label>
+              <input type="number" class="form-control pt5" id="gap-limit" aria-describedby="gap-limit" placeholder="100">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ALERT -->
+    <div class="alert alert-success">
+      <h3 class="fs16 mb10 mt-0">Success!</h3>
+      <h4 class="fs16 m-0">Wallet recovered</h4>
+    </div>
+
+    <!-- BTN CONTAINER -->
+    <div class="btn-container">
+      <a href="wallet-explorer.html" class="btn btn-primary w-100">Wallet EXPLORER</a>
+    </div>
+
+  </div>
+
+  <!-- CUSTOM JS -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

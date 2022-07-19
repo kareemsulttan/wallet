@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CoinJoin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Saas, MD, multi-uses, HTML, Mapp, Modern" />
+  <meta name="author" content="EEC" />
+  <meta name="email" content="" />
+  <meta name="website" content="" />
+  <meta name="Version" content="" />
+  <!--STYLE-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--INTRO PAGE-->
+
+<body>
+
+  <!-- MOBILE STATUS BAR -->
+  <div class="android-status-bar-container">
+    <img src="assets/android-status-bar.svg" alt="android-status-bar">
+  </div>
+
+  <div class="main h-100 p-relative coinjoin has-bottom-nav">
+
+    <!-- STATUS HEADER -->
+    <div class="header mb20">
+      <div class="row justify-content-between status-bar">
+        <div class="col-4">
+          <div class="left-side-bar d-flex justify-content-start">
+            <span class="mr10"><img src="assets/icons/status-checked.svg" alt="status-checked"></span>
+            <span><img src="assets/icons/status-blug.svg" alt="status-blug"></span>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="right-side-bar text-right fs10">
+            <span class="mr14">Peers: 12</span>
+            <span>BTS/USD: $50000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN TITLE -->
+    <div class="main-title pt-0 mb30">
+      <div class="p-relative">
+        <h2>Select Inputs</h2>
+        <a class="back-arrow" href="receive-wallet.html"><img src="assets/icons/back.svg" alt="back"></a>
+      </div>
+    </div>
+
+    <!-- SEND WALLET TABLE -->
+    <div class="send-wallet-table-container mb20">
+      <div class="send-wallet-table-header border-bottom-white full-width">
+        <div class="row fs14">
+          <div class="col-1"></div>
+          <div class="col-5">
+            <div class="amount-head">Amount (BTC)</div>
+          </div>
+          <div class="col-3">
+            <div class="privacy-head">Privacy</div>
+          </div>
+          <div class="col-3">
+            <div class="cluster-head">Cluster</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="send-wallet-table-body full-width border-bottom-white">
+
+        <!-- FIRST ROW -->
+        <div class="row fs14 send-wallet-row">
+          <div class="col-1">
+            <!-- CHECKBOX -->
+            <div class="send-wallet-checkbox">
+              <input class="custom-checkbox" id="send-wallet-1" type="checkbox" checked>
+              <label class="no-label-text" for="send-wallet-1"></label>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="amount-data text-nowrap">
+              0.00120001
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="privacy-data">
+              <img src="assets/icons/privacy.svg" alt="privacy">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="cluster-data pl18 text-nowrap">
+              test
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOND ROW -->
+        <div class="row fs14 send-wallet-row">
+          <div class="col-1">
+            <!-- CHECKBOX -->
+            <div class="send-wallet-checkbox">
+              <input class="custom-checkbox" id="send-wallet-2" type="checkbox" checked>
+              <label class="no-label-text" for="send-wallet-2"></label>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="amount-data text-nowrap">
+              0.00120001
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="privacy-data">
+              <img src="assets/icons/privacy.svg" alt="privacy">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="cluster-data pl18 text-nowrap">
+              test2
+            </div>
+          </div>
+        </div>
+
+        <!-- THIRD ROW -->
+        <div class="row fs14 send-wallet-row">
+          <div class="col-1">
+            <!-- CHECKBOX -->
+            <div class="send-wallet-checkbox">
+              <input class="custom-checkbox" id="send-wallet-3" type="checkbox" checked>
+              <label class="no-label-text" for="send-wallet-3"></label>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="amount-data text-nowrap">
+              0.00120001
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="privacy-data">
+              <img src="assets/icons/privacy.svg" alt="privacy">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="cluster-data pl18 text-nowrap">
+              test3
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SELECT CONTAINER -->
+    <div class="coinjoin-select-container border-bottom-white px16 full-width">
+      <div class="row">
+        <div class="col">
+          <div class="text-left">
+            <input class="custom-checkbox" id="select-private" type="checkbox" checked>
+            <label for="select-private">Select private</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="text-left pl18">
+            <input class="custom-checkbox" id="select-all" type="checkbox" checked>
+            <label for="select-all">Select all</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TARGET CONTAINER -->
+    <div class="target-container full-width px16 border-bottom-white py16">
+      <div class="d-flex-center-vh justify-content-start">
+        <div class="mr14">
+          <img src="assets/icons/protected.svg" alt="protected">
+        </div>
+        <div class="fs14">
+          <span>Target: </span>
+          <span>50 set</span>
+        </div>
+      </div>
+    </div>
+
+    <!--  WALLET STATUS CONTAINER -->
+    <div class="wallet-status-container py16 px16 border-bottom-white full-width mb10">
+      <div class="status-summary fs14 text-left">
+        <span>Status: </span>
+        <span>minimum <span class="text-primary">0.00123123123</span></span>
+        <span>is required for CoinJoin.</span>
+        <span>Moderator fee: </span>
+        <span>0.001% per set</span>
+      </div>
+      <div class="circles-container">
+        <div class="d-flex justify-content-between p-relative">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="line w-100"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGISTRATION -->
+    <div class="registration-container mb24">
+      <div class="title-secondary text-left mb10">
+        <h2 class="fs16">REGISTRATION</h2>
+      </div>
+      <div class="registration-summary fs14 text-left mb10">
+        <div>
+          <span>Registration ends in:</span>
+          <span> 54m12s</span>
+        </div>
+        <div>
+          <span>Number of peers: </span>
+          <span><span class="text-primary">22</span>/100</span>
+        </div>
+      </div>
+      <div class="form-group mb-0">
+        <input type="password" class="form-control fs-lg-pass" id="fee-pass" aria-describedby="feePass"
+          placeholder="Password">
+      </div>
+    </div>
+
+
+
+    <!-- BTN CONTAINER -->
+    <div class="btn-container upper-nav m-0">
+      <div class="row justify-content-between with-two-btns">
+        <button class="btn btn-secondary col">start coinjoin</button>
+        <button class="btn btn-primary col">stop coinjoin</button>
+      </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <div class="bottom-nav-container">
+      <div class="row justify-content-between flex-nowrap">
+        <div class="nav-item">
+          <a href="wallet-explorer.html">
+            <img src="assets/icons/nav-explorer.svg" alt="nav-explorer">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="send-wallet.html">
+            <img src="assets/icons/nav-send.svg" alt="nav-send">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="receive-wallet.html">
+            <img src="assets/icons/nav-receive.svg" alt="nav-recieve">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a class="active" href="coinjoin.html">
+            <img src="assets/icons/nav-coinjoin.svg" alt="nav-coinjoin">
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="settings.html">
+            <img src="assets/icons/nav-setting.svg" alt="nav-settings">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CUSTOM JS -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

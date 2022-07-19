@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Saas, Software, multi-uses, HTML, Mapp, Modern" />
+  <meta name="author" content="EEC" />
+  <meta name="email" content="" />
+  <meta name="website" content="" />
+  <meta name="Version" content="" />
+  <!--STYLE-->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root {
+      --height-of-clps-lv-1: 0px;
+      --height-of-clps-lv-2: 0px;
+    }
+
+    .clps-menu {
+      overflow: hidden;
+      position: relative;
+      width: 300px;
+      transition: all 0.2s;
+    }
+
+    .clps-menu button,
+    .clps-menu a {
+      display: inline-block;
+      width: 100%;
+      color: white;
+      border: none;
+      background-color: transparent;
+      text-align: left;
+    }
+
+    .clps-lv-1 {
+      background-color: var(--space-cadet);
+    }
+
+    .clps-lv-1>a,
+    .clps-lv-1>button {
+      padding: 20px;
+    }
+
+    .clps-lv-1>ul {
+      max-height: 0;
+      transition: all 0.5s;
+    }
+
+    .clps-lv-1.collapsed > ul {
+      max-height: calc(var(--height-of-clps-lv-1) + var(--height-of-clps-lv-2));
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clps-menu clps-lv-1">
+    <button class="clps-button"><h4>First Menu</h4></button>
+    <ul>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>First Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Second Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third item is extremely long in this one: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem aspernatur doloribus esse quisquam ut. Omnis harum, mollitia unde consequatur, deserunt rem itaque, iusto molestiae nihil iure ea dolorem fugiat alias nesciunt quae molestias. Labore praesentium ex velit odio, eius, debitis et illo non at corrupti cum rem facere ab corporis nihil ipsa quae laborum obcaecati dolore possimus exercitationem, unde placeat beatae numquam? Cum laborum architecto minus. Veritatis animi velit ab reiciendis placeat ipsum natus dignissimos, enim sapiente doloremque? Deserunt ipsum veniam, fugit cumque incidunt, voluptas et impedit ab atque, consequuntur velit unde illum saepe ducimus placeat in nulla earum cum.</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fifth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Sixth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Seventh Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Eighth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Ninth Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Third Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Fourth Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fifth Item</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="clps-menu clps-lv-1">
+    <button class="clps-button"><h4>Second Menu</h4></button>
+    <ul>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>First Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fifth Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Second Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Third Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fifth Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Fourth Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fifth Item</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="clps-menu clps-lv-1">
+    <button class="clps-button"><h4>Third Menu</h4></button>
+    <ul>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>First Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fifth Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Second Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Third Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+        </ul>
+      </li>
+      <li class="clps-menu clps-lv-2">
+        <button class="clps-button"><span>Fourth Submenu</span></button>
+        <ul>
+          <li class="clps-item"><a href=""><span>First Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Second Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Third Item</span></a></li>
+          <li class="clps-item"><a href=""><span>Fourth Item</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+</body>
+<script>
+  setListeners();
+  function setListeners() {
+    let menus = document.querySelectorAll(".clps-button");
+    for (let i = 0; i < menus.length; i++) {
+      menus.item(i).addEventListener("click", collapseToggle);
+    }
+  }
+  function collapseToggle(evt) {
+    if (evt.target.closest(".clps-menu").classList.contains("collapsed")) {
+      foldRecursively(evt.target.closest(".collapsed"));
+    } else {
+      let collapsedSiblings = evt.target.closest(".clps-menu").parentNode.querySelector(".collapsed");
+      if (collapsedSiblings) {
+        foldRecursively(collapsedSiblings);
+      }
+      collapseElement(evt.target)
+    }
+  }
+  function collapseElement(element) {
+    let section = element.closest(".clps-menu").querySelector("ul");
+    let numberBehind;
+    let sectionHeight = section.scrollHeight;
+    document.documentElement.style.setProperty(`--height-of-${element.closest(".clps-menu").classList[1]}`, sectionHeight + "px");
+    element.closest(".clps-menu").classList.add("collapsed");
+  }
+  function foldElement(element) {
+    element.closest(".clps-menu").classList.remove("collapsed");
+    document.documentElement.style.setProperty(`--height-of-${element.closest(".clps-menu").classList[1]}`, 0 + "px");
+  }
+  function foldRecursively(element) {
+    foldElement(element);
+    if (element.querySelector(".collapsed")) {
+      foldRecursively(element.querySelector(".collapsed"));
+    }
+  }
+</script>
+
+</html>
